@@ -1,0 +1,157 @@
+/* Base styles and typography */
+html {
+    font-size: 16px; /* Base font size */
+}
+
+body {
+    font-size: 1rem; /* 16px */
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+}
+
+h2 {
+    font-size: 1.5rem; /* 24px */
+}
+
+h3 {
+    font-size: 4rem; /* 64px */
+    padding: 1rem;
+}
+
+/* Layout and Grid */
+#menu-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-category {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+header {
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+#main-nav {
+    display: none;
+}
+
+#main-nav.show {
+    display: flex;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Menu Styles */
+#menu-header {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 1rem;
+    transition: transform 0.5s ease;
+    transition: filter 0.5s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.25);
+    filter: brightness(120%);
+    transition: transform 0.5s ease;
+    transition: filter 0.5s ease;
+}
+
+.menu-item-details {
+    flex-grow: 1;
+}
+
+.menu-item-name {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.menu-item-description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    color: #840029;
+}
+
+/* Featured Dish */
+#featured-img {
+    max-width: 20%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #840029;
+}
+
+/* Responsive Design */
+/* Mobile-first approach */
+@media screen and (max-width: 600px) {
+    /* TODO: Adjust #menu-categories to use a single column layout for mobile devices */
+    /* TODO: Style .menu-item to stack elements vertically and align items to the center */
+    /* TODO: Ensure that the #featured-dish section has a centered layout for both image and text */
+}
+
+/* Tablet devices */
+@media screen and (min-width: 601px) {
+    /* TODO: Update #menu-categories to display in two columns for tablet devices */
+    /* TODO: Style .menu-item to adjust image size for tablets and align details accordingly */
+    /* TODO: Add appropriate padding and ensure that the layout remains responsive without causing horizontal scroll */
+}
+
+/* Desktop devices */
+@media screen and (min-width: 901px) {
+    /* TODO: Use a three or four column layout for #menu-categories to provide better visibility on larger screens */
+    /* TODO: Adjust the #featured-dish section to display the image and details side by side */
+    /* TODO: Ensure #contact-info section is aligned horizontally with proper spacing */
+}
+
+/* Utility Classes */
+.hero-section {
+    height: 50vh; /* 50% of the viewport height */
+}
+
+.full-width-element {
+    width: 100vw; /* 100% of the viewport width */
+}

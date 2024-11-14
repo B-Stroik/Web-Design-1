@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+main {
+    
+    
+}
+
+figure {
+    padding: 3px;
+    margin: 10px;
+
+    border: 1px solid gray;
+    box-shadow: 1px 0px 5px gray,
+        -1px 0px 5px gray;
+
+    border-radius: 1%;
+
+    flex-basis: 25%;
+
+    
+}
+
+figure>img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+figcaption {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+    color: white;
+    background-color: gray;
+    text-shadow: 3px 5px 2px black;
+}
+

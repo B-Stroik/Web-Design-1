@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Restaurant Menu</title>
+    <!-- Link to the provided CSS files -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/mobilefirst.css">
+    <link rel="icon" href="../images/icons/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header section with restaurant name and navigation -->
+    <header>
+        <h1>McDonalds</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <!-- TODO: Add JavaScript to toggle the menu on mobile devices -->
+            <button id="menu-toggle" aria-label="Toggle menu" type="button">
+                <!-- TODO: Replace this placeholder with the proper icon for hamburger menu -->
+                &#x2630;
+            </button>
+            <ul id="main-nav">
+                <!-- TODO: Add any additional navigation links as needed -->
+                <li><a href="#home"><img src="../images/icons/home.png" alt="home" loading="lazy"> Home</a></li>
+                <li><a href="#menu"><img src="../images/icons/document.png" alt="menu" loading="lazy"> Menu</a></li>
+                <li><a href="#about"><img src="../images/icons/document.png" alt="about" loading="lazy"> About</a></li>
+                <li><a href="#contact"><img src="../images/icons/document.png" alt="contact" loading="lazy"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <h2 id="menu-header">Our Menu</h2>
+        <section id="menu-categories">
+            <!-- TODO: Create and populate the menu categories here -->
+            <!-- Example: Appetizers, Main Courses, Desserts -->
+             <h3>Meals</h3>
+             <h3>Sides</h3>
+             <h3>Drinks and Desserts</h3>
+        </section>
+
+        <!-- Featured dish section -->
+        <section id="featured-dish">
+            <h2>Featured Dish</h2>
+            <!-- TODO: Replace this image with a different featured dish if desired -->
+            <img src="../images/McDonald's/trump-mcdonalds.jpg" alt="Featured dish: French Fries" id="featured-img" loading="lazy">
+            <div class="dish-details">
+                <!-- Featured dish details and pricing -->
+                <h3>French Fries</h3>
+                <p>French fries deep fried and salted to prefection. Chance to be served by former President Donald Trump.</p>
+                <p class="price">$3.99 (Medium)</p>
+            </div>
+        </section>
+
+        <!-- Contact information and hours -->
+        <section id="contact-info">
+            <h2>Contact Us</h2>
+            <address>
+                <!-- restaurant information -->
+                <p>5625 US Highway 10 E. Stevens Point, WI 54481</p>
+                <!-- TODO: Update the email details as appropriate -->
+                <p>Phone: (715) 345-9578</p>
+                <p>Email: JohnMcDonald@Gmail.com</p>
+            </address>
+            <div id="hours">
+                <h3>Hours of Operation</h3>
+                <ul>
+                    <!-- hours of operation -->
+                    <li>Monday 5:00am-11:00pm</li>
+                    <li>Tuesday 5:00am-11:00pm</li>
+                    <li>Wednesday 5:00am-11:00pm</li>
+                    <li>Thursday 5:00am-11:00pm</li>
+                    <li>Friday 5:00am-11:00pm</li>
+                    <li>Saturday 5:00am-11:00pm</li>
+                    <li>Sunday 5:00am-11:00pm</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- footer text -->
+        <p>&copy; 2024 Totally McDonalds. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript section -->
+    <script src="../js/mobilefirst.js"></script>
+    <!-- TODO: Write JavaScript for the interactive hamburger menu -->
+</body>
+</html>
